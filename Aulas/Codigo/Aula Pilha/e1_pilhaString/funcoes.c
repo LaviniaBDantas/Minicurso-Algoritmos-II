@@ -30,16 +30,14 @@ int vazia (Pilha* p){
     }
 }
 
-
-char* desempilha (Pilha* p){
-    char aux;
+void desempilha (Pilha* p){
     if(vazia(p)){
         printf("Pilha vazia!\n");
     }else{
-        return p->str[p->topo--];
+        p->topo--;
+        printf("Desempilhando: %s\n", p->str[p->topo]); 
     }
 }
-
 
 
 

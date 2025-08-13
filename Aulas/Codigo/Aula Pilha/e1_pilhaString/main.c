@@ -4,17 +4,15 @@
 
 int main(){
 
-    Pilha* pilha;
-    char str[10];
-    
+    Pilha* pilha;    
     pilha= cria_pilha();
 
     empilha(pilha, "Mauricio");
     empilha(pilha, "Marcelo");
-    printf("Valor desempilhado: %s\n",desempilha(pilha));
+    desempilha(pilha);
     empilha(pilha, "Guilherme");
     empilha(pilha, "Paulo");
-    printf("Valor desempilhado: %s\n",desempilha(pilha));
+    desempilha(pilha);
 
     
     return 0;
